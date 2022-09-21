@@ -20,11 +20,11 @@ button {
   height: 120px;
   border-radius: 50%;
   outline: 1px solid rgb(179, 179, 179);
-  color: rgb(54, 54, 54);
-  background-color: rgb(207, 207, 207);
+
   box-shadow: 0px 3px 1px rgba(139, 139, 139, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
 .container,
 .container-party {
   display: flex;
@@ -47,6 +47,7 @@ button {
 
 .container-party {
   z-index: -1;
+  align-items: center;
 }
 .bg {
   overflow: hidden;
@@ -255,6 +256,10 @@ button {
 .container-party img {
   border: 1px solid tomato;
 }
+
+.container-party .hb-title img {
+  border: none;
+}
 .img {
   display: block;
   width: 100%;
@@ -272,7 +277,8 @@ button {
   bottom: 50%;
   /* left: 50%; */
   justify-content: center;
-
+  color: rgb(31, 31, 31);
+  background-color: rgb(207, 207, 207);
   opacity: 1;
   visibility: visible;
   transition: opacity 550ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -301,6 +307,9 @@ button {
   transform: translateX(-200%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 32000ms;
+  color: rgb(255, 255, 255);
+  background-color: tomato;
+  font-size: 18px;
 }
 .button-party.action {
   transform: translateX(0);
@@ -328,6 +337,12 @@ button {
     width: 320px;
   }
 } */
+
+.hb-title {
+  width: 100%;
+  /* height: 100px; */
+  z-index: 1;
+}
 
 .hidden {
   position: absolute;

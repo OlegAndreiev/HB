@@ -46,7 +46,7 @@ function soundParty() {
   audio.src = './Audio/reel-2-real_-_i-like-to-move-it.mp3'; // Указываем путь к звуку "клика"
   audio.autoplay = true;
   audio.controls = true; // Автоматически запускаем
-  // audio.loop = true;
+  audio.loop = true;
 }
 
 // buttonRepeat.addEventListener('click', () => {
