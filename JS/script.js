@@ -7,6 +7,7 @@ const petardAction = document.querySelector('.petard-image');
 const petardRotateAction = document.querySelector('.petard-image-rotated');
 const tapeImageRight = document.querySelector('.tape-image-right');
 const tapeImageLeft = document.querySelector('.tape-image-left');
+const tapeImageCenter = document.querySelector('.tape-image-center');
 const bgImageAction = document.querySelector('.bg-image');
 const mainContainer = document.querySelector('.container');
 const partyContainer = document.querySelector('.container-party');
@@ -19,8 +20,9 @@ buttonAction.addEventListener('click', () => {
   petardRotateAction.classList.add('action');
   tapeImageRight.classList.add('action');
   tapeImageLeft.classList.add('action');
+  tapeImageCenter.classList.add('action');
   bgImageAction.classList.add('action');
-  buttonRepeat.classList.add('action');
+  // buttonRepeat.classList.add('action');
   buttonParty.classList.add('action');
   sound();
 });
@@ -47,6 +49,6 @@ function soundParty() {
   // audio.loop = true;
 }
 
-buttonRepeat.addEventListener('click', () => {
-  sound();
-});
+// buttonRepeat.addEventListener('click', () => {
+//   sound();
+// });
